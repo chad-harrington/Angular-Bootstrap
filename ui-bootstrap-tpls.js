@@ -2726,7 +2726,6 @@ angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap
                                 element.bind( triggers.show, showTooltipBind );
                                 element.bind( triggers.hide, hideTooltipBind );
                             }
-                            element.find('.icon-close').bind(triggers.hide, hideTooltipBind);
                         }
                         prepTriggers();
 
@@ -4115,8 +4114,8 @@ angular.module("template/popover/popover.html", []).run(["$templateCache", funct
                        "\n" +
                        "  <div class=\"popover-inner\">\n" +
                        "      <div class=\"popover-close\"><span class=\"icon-close\"></span></div>\n" +
-                       "      <h3 class=\"popover-title\" ng-bind=\"title\" ng-show=\"title\"></h3>\n" +
-                       "      <div class=\"popover-content\" ng-bind=\"content\"></div>\n" +
+                       "      <h3 class=\"popover-title exclude\" ng-bind=\"title\" ng-show=\"title\"></h3>\n" +
+                       "      <div class=\"popover-content exclude\" ng-bind=\"content\"></div>\n" +
                        "  </div>\n" +
                        "</div>\n" +
                        "");
