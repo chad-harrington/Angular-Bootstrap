@@ -2725,8 +2725,8 @@ angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap
                             } else {
                                 element.bind( triggers.show, showTooltipBind );
                                 element.bind( triggers.hide, hideTooltipBind );
-                                element.find('.icon-close').bind(triggers.hide, hideTooltipBind);
                             }
+                            element.find('.icon-close').bind(triggers.hide, hideTooltipBind);
                         }
                         prepTriggers();
 
